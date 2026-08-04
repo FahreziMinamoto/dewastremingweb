@@ -1,0 +1,41 @@
+/* Custom Global Adjustments */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Selection Highlight Color */
+::selection {
+    background-color: #D4AF37;
+    color: #000000;
+}
+
+/* Hide scrollbar defaults while styling track */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+    background: #222222;
+    border-radius: 4px;
+    border: 1px solid #D4AF37;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #D4AF37;
+}
+
+/* Backdrop smooth transition helper */
+#itemModal {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Active states animation details */
+.modal-open {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+.modal-open > div {
+    transform: scale(1) !important;
+}

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dewa Streaming | Broadcasting & Multimedia </title>
+    <link rel="icon" href="aset/LOGO DS.jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#f6e08a',
+                            DEFAULT: '#D4AF37',
+                            dark: '#aa8416',
+                        },
+                        darkbg: '#0a0a0a',
+                        darkcard: '#161616',
+                        darkgray: '#222222'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-darkbg text-gray-100 font-sans overflow-x-hidden">
+
+    <header class="fixed w-full top-0 z-50 bg-darkbg/90 backdrop-blur-md border-b border-gold/20 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2 group">
+                <span class="text-2xl font-black tracking-wider text-gold group-hover:text-gold-light transition duration-300">DEWA STREAMING</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <a href="#home" class="hover:text-gold transition duration-300 text-sm uppercase tracking-wider">Home</a>
+                <a href="#about" class="hover:text-gold transition duration-300 text-sm uppercase tracking-wider">About Us</a>
+                <a href="#docs" class="hover:text-gold transition duration-300 text-sm uppercase tracking-wider">Dokumentasi</a>
+                <a href="#team" class="hover:text-gold transition duration-300 text-sm uppercase tracking-wider">Tim Kami</a>
+                <a href="#rental" class="hover:text-gold transition duration-300 text-sm uppercase tracking-wider">Sewa Alat</a>
+                <a href="https://linktr.ee/dewastreaming" target="_blank" class="bg-gradient-to-r from-gold-dark to-gold text-black font-bold px-5 py-2 rounded-full shadow-lg hover:brightness-110 transition duration-300 text-sm uppercase tracking-wider">Contact Person</a>
+            </nav>
+
+            <button id="menu-btn" class="md:hidden text-gold focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-darkcard border-b border-gold/20 px-6 py-4 space-y-4 font-medium transition-all">
+            <a href="#home" class="block hover:text-gold transition text-sm uppercase tracking-wider">Home</a>
+            <a href="#about" class="block hover:text-gold transition text-sm uppercase tracking-wider">About Us</a>
+            <a href="#docs" class="block hover:text-gold transition text-sm uppercase tracking-wider">Dokumentasi</a>
+            <a href="#team" class="block hover:text-gold transition text-sm uppercase tracking-wider">Tim Kami</a>
+            <a href="#rental" class="block hover:text-gold transition text-sm uppercase tracking-wider">Sewa Alat</a>
+            <a href="https://linktr.ee/dewastreaming" target="_blank" class="block text-center bg-gold text-black font-bold px-4 py-2 rounded-md">Contact Person</a>
+        </div>
+    </header>
+
+    <section id="home" class="relative h-screen flex items-center justify-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-darkcard via-darkbg to-darkbg pt-16">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://picsum.photos/1920/1080?random=10')] bg-cover bg-center mix-blend-overlay"></div>
+        <div class="container mx-auto px-6 text-center relative z-10" data-aos="zoom-in" data-aos-duration="1200">
+            <span class="text-gold font-bold tracking-widest uppercase text-sm border-b-2 border-gold/40 pb-2">Broadcast & Livestream</span>
+            <h1 class="text-4xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-gold-light to-gold mt-6 mb-6 tracking-tight">
+                DEWA STREAMING
+            </h1>
+            <p class="text-gray-400 max-w-2xl mx-auto text-base md:text-xl font-light mb-10 leading-relaxed">
+                Platform penyedia layanan broadcasting, multimedia event organizer, dan persewaan alat produksi kelas premium untuk hasil siaran langsung yang tanpa cela.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#rental" class="w-full sm:w-auto bg-gradient-to-r from-gold-dark to-gold text-black font-bold px-8 py-4 rounded-md shadow-xl hover:scale-105 transition duration-300">Jelajahi Layanan</a>
+                <a href="#about" class="w-full sm:w-auto border border-gold text-gold hover:bg-gold hover:text-black font-bold px-8 py-4 rounded-md transition duration-300">Pelajari Selengkapnya</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-darkcard relative border-y border-gold/10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <span class="text-gold font-bold uppercase tracking-wider text-sm">Siapa Kami</span>
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-white mt-2 mb-6">Membawa Event Anda Ke Jutaan Layar</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                        Dewa Streaming adalah platform rekomendasi utama dan penyedia layanan broadcasting terintegrasi. Kami melayani Event Organizer (EO), instansi korporat, hingga kreator independen untuk menciptakan pengalaman penyiaran digital yang stabil, interaktif, dan berkualitas tinggi (Full HD hingga 4K).
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6" data-aos="fade-left">
+                    <div class="p-6 bg-darkbg border border-gold/10 rounded-xl hover:border-gold/40 transition">
+                        <div class="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center text-gold mb-4 font-bold text-xl">01</div>
+                        <h3 class="text-white font-bold text-lg mb-2">Event Live Streaming</h3>
+                        <p class="text-gray-400 text-sm">Konser, seminar, webinar, hingga wedding dengan sistem multi-camera studio.</p>
+                    </div>
+                    <div class="p-6 bg-darkbg border border-gold/10 rounded-xl hover:border-gold/40 transition">
+                        <div class="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center text-gold mb-4 font-bold text-xl">02</div>
+                        <h3 class="text-white font-bold text-lg mb-2">Penyewaan Alat</h3>
+                        <p class="text-gray-400 text-sm">Kamera, switcher video profesional, peralatan audio, dan wireless transmitter.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="docs" class="py-24 bg-darkbg">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gold font-bold uppercase tracking-wider text-sm">Portofolio Kerja</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white mt-2">Dokumentasi Event</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group overflow-hidden rounded-xl bg-darkcard border border-gold/10" data-aos="fade-up" data-aos-delay="100">
+                    <div class="overflow-hidden h-64 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('aset/Photo/Foto\ Dokum\ 4.jpg');"></div>
+                    <div class="p-5">
+                        <h3 class="text-white font-bold text-lg">Maulid Nabi Muhammad SAW </h3>
+                        <p class="text-gray-400 text-sm mt-1">Event Peringatan Hari Besar Islam di SMKN 8 Jakarta</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-xl bg-darkcard border border-gold/10" data-aos="fade-up" data-aos-delay="200">
+                    <div class="overflow-hidden h-64 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('aset/Photo/Foto\ Dokum\ 3.jpg');"></div>
+                    <div class="p-5">
+                        <h3 class="text-white font-bold text-lg">Behind The Scane Acara</h3>
+                        <p class="text-gray-400 text-sm mt-1">Proses kami dalam mengatur acara</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-xl bg-darkcard border border-gold/10" data-aos="fade-up" data-aos-delay="200">
+                    <div class="overflow-hidden h-64 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('aset/Photo/Foto\ Dokum\ 2.jpg');"></div>
+                    <div class="p-5">
+                        <h3 class="text-white font-bold text-lg">Hybrid Seminar Nasional</h3>
+                        <p class="text-gray-400 text-sm mt-1">Integrasi Zoom, Youtube Live, dan tata panggung LED fisik.</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-xl bg-darkcard border border-gold/10" data-aos="fade-up" data-aos-delay="200">
+                    <div class="overflow-hidden h-64 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('aset/Photo/Foto\ Dokum\ 1\.jpg');"></div>
+                    <div class="p-5">
+                        <h3 class="text-white font-bold text-lg">Acara Wisuda SMKN 8 Jakarta Tahun 2026</h3>
+                        <p class="text-gray-400 text-sm mt-1">Integrasi Zoom, Youtube Live, dan tata panggung LED fisik.</p>
+                    </div>
+                </div>
+                 <div class="group overflow-hidden rounded-xl bg-darkcard border border-gold/10" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-64 bg-darkbg relative">
+                        <video class="w-full h-full object-cover" controls  muted autoplay loop playinline class="w-full rounded-2xl">
+                            <source src="aset/Video/Dokumentasi 3.mp4" type="video/mp4">
+                            Browser tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-white font-bold text-lg">Behind The Scene Production</h3>
+                        <p class="text-gray-400 text-sm mt-1">Lihat keseruan dan cara kerja tim profesional kami di lapangan (Klik Play).</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-xl bg-darkcard border border-gold/10" data-aos="fade-up" data-aos-delay="200">
+                    <div class="overflow-hidden h-64 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('aset/Photo/Foto\ Dokum\ 7\.jpg');"></div>
+                    <div class="p-5">
+                        <h3 class="text-white font-bold text-lg">Acara Wisuda SMKN 8 Jakarta Tahun 2026</h3>
+                        <p class="text-gray-400 text-sm mt-1">Integrasi Zoom, Youtube Live, dan tata panggung LED fisik.</p>
+                    </div>
+                </div>
+                 <div class="group overflow-hidden rounded-xl bg-darkcard border border-gold/10" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-65 bg-darkbg relative">
+                        <video class="w-full h-full object-cover" controls  muted autoplay loop playinline class="w-full rounded-2xl">
+                            <source src="aset/Video/Dokumentasi 2 (1).mp4" type="video/mp4">
+                            Browser tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-white font-bold text-lg">Behind The Scene Production</h3>
+                        <p class="text-gray-400 text-sm mt-1">Lihat keseruan dan cara kerja tim profesional kami di lapangan (Klik Play).</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-xl bg-darkcard border border-gold/10" data-aos="fade-up" data-aos-delay="200">
+                    <div class="overflow-hidden h-64 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('aset/Photo/Foto\ Dokum\ 5\.jpg');"></div>
+                    <div class="p-5">
+                        <h3 class="text-white font-bold text-lg">Acara Wisuda SMKN 8 Jakarta Tahun 2026</h3>
+                        <p class="text-gray-400 text-sm mt-1">Integrasi Zoom, Youtube Live, dan tata panggung LED fisik.</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-xl bg-darkcard border border-gold/10" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-64 bg-darkbg relative">
+                        <video class="w-full h-full object-cover" controls  muted autoplay loop playinline class="w-full rounded-2xl">
+                            <source src="aset/Video/Dokumentasi.mp4" type="video/mp4">
+                            Browser tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-white font-bold text-lg">Behind The Scene Production</h3>
+                        <p class="text-gray-400 text-sm mt-1">Lihat keseruan dan cara kerja tim profesional kami di lapangan (Klik Play).</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-24 bg-darkcard border-t border-gold/10">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gold font-bold uppercase tracking-wider text-sm">Struktur Organisasi</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white mt-2">Jobdesk Tim Kami</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-darkbg p-8 rounded-xl border border-gold/10 hover:border-gold/40 transition text-center" data-aos="fade-right">
+                    <div class="w-28 h-28 rounded-full mx-auto mb-6 bg-cover bg-center border-2 border-gold shadow-lg shadow-gold/20" style="background-image: url('aset/Photo/Iten\ Photo.jpeg');"></div>
+                    <h3 class="text-xl font-bold text-white">Kristian Antony</h3>
+                    <span class="text-gold text-sm font-semibold tracking-wider block mt-1 mb-4">Technical & Program Director</span>
+                    <p class="text-gray-400 text-sm leading-relaxed text-left border-t border-gray-800 pt-4">
+                        Bertanggung jawab mengatur alur visual (vMix/Switcher operator), menyusun rundown teknis penyiaran, memimpin komando juru kamera, serta memastikan kestabilan bitrate streaming tetap aman sepanjang acara berlangsung.
+                    </p>
+                </div>
+                <div class="bg-darkbg p-8 rounded-xl border border-gold/10 hover:border-gold/40 transition text-center" data-aos="fade-up">
+                    <div class="w-28 h-28 rounded-full mx-auto mb-6 bg-cover bg-center border-2 border-gold shadow-lg shadow-gold/20" style="background-image: url('aset/Photo/Sanjar\ Photo.jpeg');"></div>
+                    <h3 class="text-xl font-bold text-white">Sanjar Fakhri Aidin</h3>
+                    <span class="text-gold text-sm font-semibold tracking-wider block mt-1 mb-4">Streaming Engineer</span>
+                    <p class="text-gray-400 text-sm leading-relaxed text-left border-t border-gray-800 pt-4">
+                       teknis di balik layar digital yang bertanggung jawab memastikan proses siaran langsung berjalan mulus tanpa kendala teknis. Pekerjaan ini meliputi instalasi dan konfigurasi perangkat keras seperti video switcher serta perangkat lunak penyiaran seperti OBS atau vMix.
+                    </p>
+                </div>
+                <div class="bg-darkbg p-8 rounded-xl border border-gold/10 hover:border-gold/40 transition text-center" data-aos="fade-left">
+                    <div class="w-28 h-28 rounded-full mx-auto mb-6 bg-cover bg-center border-2 border-gold shadow-lg shadow-gold/20" style="background-image: url('https://picsum.photos/300/300?random=15');"></div>
+                    <h3 class="text-xl font-bold text-white">Fajri Pasha</h3>
+                    <span class="text-gold text-sm font-semibold tracking-wider block mt-1 mb-4">Chief Camera Operator</span>
+                    <p class="text-gray-400 text-sm leading-relaxed text-left border-t border-gray-800 pt-4">
+                       bertindak sebagai kapten visual yang memimpin seluruh kru kamera di lokasi produksi. Tanggung jawab utamanya adalah menerjemahkan visi sutradara ke dalam teknis pengambilan gambar, mulai dari melakukan survei lokasi untuk menentukan titik penempatan kamera hingga memilih jenis lensa yang tepat.
+                    </p>
+                </div>
+                <div class="bg-darkbg p-8 rounded-xl border border-gold/10 hover:border-gold/40 transition text-center" data-aos="fade-left">
+                    <div class="w-28 h-28 rounded-full mx-auto mb-6 bg-cover bg-center border-2 border-gold shadow-lg shadow-gold/20" style="background-image: url('aset/Photo/Ghendi\ Photo.jpeg');"></div>
+                    <h3 class="text-xl font-bold text-white">Ghendy Febriano</h3>
+                    <span class="text-gold text-sm font-semibold tracking-wider block mt-1 mb-4">Switcher Operator</span>
+                    <p class="text-gray-400 text-sm leading-relaxed text-left border-t border-gray-800 pt-4">
+                       sebagai eksekutor visual yang menentukan gambar kamera mana yang akan ditayangkan ke layar penonton secara real-time. Menggunakan perangkat video switcher, posisi ini bertanggung jawab untuk memotong, memindahkan, dan menggabungkan sudut pandang dari berbagai kamera, menyisipkan aset grafis, serta memasukkan video sisipan sesuai dengan aba-aba dari sutradara atau Show Director.
+                    </p>
+                </div>
+                <div class="bg-darkbg p-8 rounded-xl border border-gold/10 hover:border-gold/40 transition text-center" data-aos="fade-left">
+                    <div class="w-28 h-28 rounded-full mx-auto mb-6 bg-cover bg-center border-2 border-gold shadow-lg shadow-gold/20" style="background-image: url('aset/Photo/Ical\ Photo.jpeg');"></div>
+                    <h3 class="text-xl font-bold text-white">Faisal Thoriq</h3>
+                    <span class="text-gold text-sm font-semibold tracking-wider block mt-1 mb-4">Lightingman</span>
+                    <p class="text-gray-400 text-sm leading-relaxed text-left border-t border-gray-800 pt-4">
+                       memiliki tanggung jawab utama dalam menghidupkan suasana visual melalui penataan cahaya yang tepat di dalam set. Berdasarkan konsep acara yang telah ditentukan, posisi ini bertugas memasang, mengarahkan, dan mengatur intensitas berbagai jenis lampu produksi agar menghasilkan pencahayaan yang seimbang.
+                    </p>
+                </div>
+                <div class="bg-darkbg p-8 rounded-xl border border-gold/10 hover:border-gold/40 transition text-center" data-aos="fade-left">
+                    <div class="w-28 h-28 rounded-full mx-auto mb-6 bg-cover bg-center border-2 border-gold shadow-lg shadow-gold/20" style="background-image: url('aset/Photo/Reji\ Photo.jpeg');"></div>
+                    <h3 class="text-xl font-bold text-white">Fahrezi Pugliarra</h3>
+                    <span class="text-gold text-sm font-semibold tracking-wider block mt-1 mb-4">Audio Engineer</span>
+                    <p class="text-gray-400 text-sm leading-relaxed text-left border-t border-gray-800 pt-4">
+                        penanggung jawab utama atas kualitas suara dan tata suara keseluruhan selama proses produksi berlangsung. Tanggung jawabnya dimulai dari mempersiapkan, memasang, dan menguji coba seluruh perangkat audio seperti mikrofon, kabel, mixer suara, hingga sistem monitor nirkabel.
+                    </p>
+                </div>
+                <div class="bg-darkbg p-8 rounded-xl border border-gold/10 hover:border-gold/40 transition text-center" data-aos="fade-left">
+                    <div class="w-28 h-28 rounded-full mx-auto mb-6 bg-cover bg-center border-2 border-gold shadow-lg shadow-gold/20" style="background-image: url('aset/Photo/Photo\ Ibol.jpeg');"></div>
+                    <h3 class="text-xl font-bold text-white">Sayyid Iqbal</h3>
+                    <span class="text-gold text-sm font-semibold tracking-wider block mt-1 mb-4">Cameraman</span>
+                    <p class="text-gray-400 text-sm leading-relaxed text-left border-t border-gray-800 pt-4">
+                       bertanggung jawab penuh dalam mengoperasikan perangkat kamera secara teknis untuk menangkap setiap momen penting dengan presisi tinggi. Sebelum produksi dimulai, posisi ini bertugas merakit, menguji, dan memastikan seluruh peralatan kamera siap digunakan. 
+                    </p>
+                </div>
+                <div class="bg-darkbg p-8 rounded-xl border border-gold/10 hover:border-gold/40 transition text-center" data-aos="fade-left">
+                    <div class="w-28 h-28 rounded-full mx-auto mb-6 bg-cover bg-center border-2 border-gold shadow-lg shadow-gold/20" style="background-image: url('https://picsum.photos/300/300?random=15');"></div>
+                    <h3 class="text-xl font-bold text-white">Haiqal Hidayat</h3>
+                    <span class="text-gold text-sm font-semibold tracking-wider block mt-1 mb-4">Grapic Desainer</span>
+                    <p class="text-gray-400 text-sm leading-relaxed text-left border-t border-gray-800 pt-4">
+                        bertanggung jawab untuk menciptakan seluruh elemen visual dan identitas estetika yang diperlukan dalam sebuah produksi. Pekerjaan ini meliputi pembuatan aset grafis seperti logo acara, lower third (tampilan nama di layar), latar belakang panggung digital, hingga desain promosi untuk media sosial.
+                    </p>
+                </div>
+                <div class="bg-darkbg p-8 rounded-xl border border-gold/10 hover:border-gold/40 transition text-center" data-aos="fade-left">
+                    <div class="w-28 h-28 rounded-full mx-auto mb-6 bg-cover bg-center border-2 border-gold shadow-lg shadow-gold/20" style="background-image: url('https://picsum.photos/300/300?random=15');"></div>
+                    <h3 class="text-xl font-bold text-white">Syifa Aisyari</h3>
+                    <span class="text-gold text-sm font-semibold tracking-wider block mt-1 mb-4">Content Creator</span>
+                    <p class="text-gray-400 text-sm leading-relaxed text-left border-t border-gray-800 pt-4">
+                        Mengatur penempatan sudut kamera (angle), pergerakan kamera dinamis menggunakan gimbal stabilizer/crane, serta memastikan pencahayaan subjek konsisten dan fokus gambar terkunci sempurna untuk keindahan estetika visual.
+                    </p>
+                </div>
+                <div class="bg-darkbg p-8 rounded-xl border border-gold/10 hover:border-gold/40 transition text-center" data-aos="fade-left">
+                    <div class="w-28 h-28 rounded-full mx-auto mb-6 bg-cover bg-center border-2 border-gold shadow-lg shadow-gold/20" style="background-image: url('https://picsum.photos/300/300?random=15');"></div>
+                    <h3 class="text-xl font-bold text-white">Ready Rizanta</h3>
+                    <span class="text-gold text-sm font-semibold tracking-wider block mt-1 mb-4">Content Creator</span>
+                    <p class="text-gray-400 text-sm leading-relaxed text-left border-t border-gray-800 pt-4">
+                        Mengatur penempatan sudut kamera (angle), pergerakan kamera dinamis menggunakan gimbal stabilizer/crane, serta memastikan pencahayaan subjek konsisten dan fokus gambar terkunci sempurna untuk keindahan estetika visual.
+                    </p>
+                </div>
+                <div class="bg-darkbg p-8 rounded-xl border border-gold/10 hover:border-gold/40 transition text-center" data-aos="fade-left">
+                    <div class="w-28 h-28 rounded-full mx-auto mb-6 bg-cover bg-center border-2 border-gold shadow-lg shadow-gold/20" style="background-image: url('https://picsum.photos/300/300?random=15');"></div>
+                    <h3 class="text-xl font-bold text-white">Jake Zaafarani
+                    </h3>
+                    <span class="text-gold text-sm font-semibold tracking-wider block mt-1 mb-4">Content Creator</span>
+                    <p class="text-gray-400 text-sm leading-relaxed text-left border-t border-gray-800 pt-4">
+                        Mengatur penempatan sudut kamera (angle), pergerakan kamera dinamis menggunakan gimbal stabilizer/crane, serta memastikan pencahayaan subjek konsisten dan fokus gambar terkunci sempurna untuk keindahan estetika visual.
+                    </p>
+                </div>
+                <div class="bg-darkbg p-8 rounded-xl border border-gold/10 hover:border-gold/40 transition text-center" data-aos="fade-left">
+                    <div class="w-28 h-28 rounded-full mx-auto mb-6 bg-cover bg-center border-2 border-gold shadow-lg shadow-gold/20" style="background-image: url('https://picsum.photos/300/300?random=15');"></div>
+                    <h3 class="text-xl font-bold text-white">Ari Wisnu Pratama
+                    </h3>
+                    <span class="text-gold text-sm font-semibold tracking-wider block mt-1 mb-4">Content Creator</span>
+                    <p class="text-gray-400 text-sm leading-relaxed text-left border-t border-gray-800 pt-4">
+                        Mengatur penempatan sudut kamera (angle), pergerakan kamera dinamis menggunakan gimbal stabilizer/crane, serta memastikan pencahayaan subjek konsisten dan fokus gambar terkunci sempurna untuk keindahan estetika visual.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rental" class="py-24 bg-darkbg">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gold font-bold uppercase tracking-wider text-sm">Equipment Catalog</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white mt-2">Sewa Alat Profesional</h2>
+                <p class="text-gray-400 text-sm mt-3">Silakan klik gambar alat untuk melihat spesifikasi detail fungsi, kegunaan, dan tarif sewa harian.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="rental-card bg-darkcard rounded-xl overflow-hidden border border-gold/10 hover:border-gold cursor-pointer transition duration-300 transform hover:-translate-y-2" 
+                     data-title="Sony FX3 Cinema Line Camera" 
+                     data-func="Baofeng BF-888S adalah radio komunikasi genggam ringkas yang bekerja pada frekuensi UHF 400-470 MHz dengan kapasitas 16 channel dan daya output 3 watt. Perangkat ini populer karena harganya yang murah, mudah dipakai, dan pas untuk area kerja seperti gudang atau kegiatan luar ruangan." 
+                     data-price="Rp 15.000 / Unit"
+                     data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-56 bg-cover bg-center" style="background-image: url('aset/Photo/alat\ Sewa\ Baofeng');"></div>
+                    <div class="p-6 flex justify-between items-center bg-darkcard">
+                        <h3 class="text-white font-bold text-lg">HT Baofeng</h3>
+                        <span class="text-gold text-sm font-bold">&rarr;</span>
+                    </div>
+                </div>
+                <div class="rental-card bg-darkcard rounded-xl overflow-hidden border border-gold/10 hover:border-gold cursor-pointer transition duration-300 transform hover:-translate-y-2" 
+                     data-title="Mixer Luxona" 
+                     data-func="Mixer mini yang meimiki 2 input XLR Female, Mixer ini bisa untuk di jadikan sebagai tambahan alat untuk audio system " 
+                     data-price="Rp 50.000 / 24 Jam"
+                     data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-56 bg-cover bg-center" style="background-image: url('aset/Photo/WhatsApp\ Image\ 2026-08-04\ at\ 8.26.05\ PM\ \(1\).jpeg');"></div>
+                    <div class="p-6 flex justify-between items-center bg-darkcard">
+                        <h3 class="text-white font-bold text-lg">Mixer Luxona</h3>
+                        <span class="text-gold text-sm font-bold">&rarr;</span>
+                    </div>
+                </div>
+                <div class="rental-card bg-darkcard rounded-xl overflow-hidden border border-gold/10 hover:border-gold cursor-pointer transition duration-300 transform hover:-translate-y-2" 
+                     data-title="SoundCard DS Orca" 
+                     data-func="Soundcard DS Orca ini di gunakan untuk mengubah suara agar bisa di gunakan untuk rekaman alat musik atau rekaman Live Streaming agar bisa terdeteksi oleh PC ataupun Laptop" 
+                     data-price="Rp 100.000 / 24 Jam (4 Pax)"
+                     data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-56 bg-cover bg-center" style="background-image: url('aset/Photo/WhatsApp\ Image\ 2026-08-04\ at\ 8.26.05\ PM.jpeg');"></div>
+                    <div class="p-6 flex justify-between items-center bg-darkcard">
+                        <h3 class="text-white font-bold text-lg">SoundCard DS Orca</h3>
+                        <span class="text-gold text-sm font-bold">&rarr;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="itemModal" class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-darkcard border border-gold rounded-xl w-full max-w-lg p-8 relative transform scale-95 transition-transform duration-300 shadow-2xl shadow-gold/10">
+            <button class="close-btn absolute top-4 right-4 text-gray-400 hover:text-gold text-2xl font-bold">&times;</button>
+            <h3 id="modal-title" class="text-2xl font-extrabold text-gold border-b border-gray-800 pb-4">Nama Alat</h3>
+            <div class="mt-4">
+                <p class="text-sm uppercase tracking-wider text-gray-400 font-semibold mb-1">Fungsi & Kegunaan:</p>
+                <p id="modal-func" class="text-gray-300 text-sm leading-relaxed mb-6">Deskripsi kegunaan alat...</p>
+                <div class="bg-darkbg p-4 rounded-lg border border-gold/20 flex justify-between items-center">
+                    <span class="text-sm font-medium text-gray-400">Tarif Sewa:</span>
+                    <span id="modal-price" class="text-xl font-black text-gold">Rp 0</span>
+                </div>
+            </div>
+            <div class="mt-6">
+                <a href="https://linktr.ee/linktree_kamu" target="_blank" class="block text-center w-full bg-gradient-to-r from-gold-dark to-gold text-black font-bold py-3 rounded-md hover:brightness-110 transition">Pesan Lewat WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-darkbg text-gray-400 border-t border-gold/20">
+        <div class="container mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div>
+                <h4 class="text-white font-extrabold text-lg tracking-wider mb-6 text-gold">DEWA STREAMING</h4>
+                <p class="text-sm leading-relaxed mb-6">
+                    Mitra produksi digital tepercaya untuk kebutuhan event online, live streaming studio, hiburan, dan penyedia ekosistem multimedia terlengkap.
+                </p>
+                <div class="p-4 rounded-lg border border-gold/10 bg-darkcard">
+                    <p class="text-white font-bold text-xs uppercase text-gold tracking-widest mb-1">Konsultasi Gratis</p>
+                    <p class="text-xs text-gray-400 mb-2">Punya kebutuhan event mendadak?</p>
+                    <a href="https://linktr.ee/dewastreaming" target="_blank" class="inline-block text-xs bg-gold text-black font-bold px-3 py-1.5 rounded hover:bg-gold-light transition">Hubungi Kami</a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6 text-gold">Layanan Kami</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#about" class="hover:text-gold transition">Multi-Camera Production</a></li>
+                    <li><a href="#about" class="hover:text-gold transition">Hybrid Webinar Solutions</a></li>
+                    <li><a href="#rental" class="hover:text-gold transition">Rental Alat Broadcast</a></li>
+                    <li><a href="#docs" class="hover:text-gold transition">Dokumentasi & Pasca Produksi</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6 text-gold">Menu Navigasi</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#home" class="hover:text-gold transition">Home</a></li>
+                    <li><a href="#about" class="hover:text-gold transition">About Us</a></li>
+                    <li><a href="#docs" class="hover:text-gold transition">Dokumentasi</a></li>
+                    <li><a href="#team" class="hover:text-gold transition">Tim Profesional</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6 text-gold">Kantor Pusat</h4>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-start space-x-3">
+                        <svg class="w-5 h-5 text-gold mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <span>Jl. Multimedia Raya No. 88, Blok K-3, Jakarta Selatan, Indonesia</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <svg class="w-5 h-5 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span>+62 812-3456-7890</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-black py-6 border-t border-gray-900 text-center text-xs">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 Dewa Streaming. All Rights Reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-gold transition">Terms of Service</a>
+                    <a href="#" class="hover:text-gold transition">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
